@@ -6,5 +6,6 @@
 3. Khởi chạy ứng dụng
     Chạy server:
   
-    npm start
+    php artisan serve
+   
     Truy cập ứng dụng tại: http://localhost:3000
