@@ -11,9 +11,9 @@ Route::get('/home', function () {
 Route::get('/cart', function () {
     return view('fe.cart');
 });
-Route::get('/all', function () {
-    return view('fe.allproducts');
+Route::get('/loginadm', function () {
+    return view('login.loginadm');
 });
-Route::get('/admin.list', function () {
-    return view('admin.product.list');
+Route::get('/loginfee', function () {
+    return view('login.loginfe');
 });
