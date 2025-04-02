@@ -5,20 +5,24 @@
         <div class="admin-content-main-content-left">
             <div class="admin-content-main-content-left-item">
                 <div class="admin-content-main-content-two-input">
-                    <input name="name" value="{{old('name')}}" type="text" placeholder="Tên sản phẩm">
+                    <input name="Name" value="{{old('Name')}}" type="text" placeholder="Tên căn hộ">
                 </div>
                 <div class="admin-content-main-content-two-input">
-                    <input name="ram" value="{{old('ram')}}" type="text" placeholder="Ram">
-                    <input name="ssd" value="{{old('ssd')}}" type="text" placeholder="SSD">
+                    <input name="Address" value="{{old('Address')}}" type="text" placeholder="Địa chỉ">
+                    <input name="Star_rating" value="{{old('Star_rating')}}" type="text" placeholder="Sao đánh giá">
                 </div>
                 <div class="admin-content-main-content-two-input">
-                    <input name="price_noma" value="{{old('price_noma')}}" type="text" placeholder="Giá bán">
-                    <input name="price_sale" value="{{old('price_sale')}}" type="text" placeholder="Giá giảm">
+                    <input name="Price_noma" value="{{old('Price_noma')}}" type="text" placeholder="Giá thuê">
+                    <input name="Price_sale" value="{{old('Price_sale')}}" type="text" placeholder="Giá giảm">
                 </div>
-                <textarea name="description" id="" value="{{old('description')}}" placeholder="Đặc điểm nổi bật"></textarea>
-                <textarea name="content" id="" value="{{old('content')}}" placeholder="Mô tả sản phẩm"></textarea>
+                <div class="admin-content-main-content-two-input">
+                    <input name="Phone" value="{{old('Phone')}}" type="text" placeholder="Số điện thoại">
+                    <input name="Gmail" value="{{old('Gmail')}}" type="email" placeholder="Gmail">
+                </div>
+                <textarea name="Description" id="" value="{{old('Description')}}" placeholder="Đặc điểm nổi bật"></textarea>
+                <textarea name="Content" id="" value="{{old('Content')}}" placeholder="Mô tả Căn hộ"></textarea>
             </div>
-            <button type="submit" class="main-btn">Thêm Sản Phẩm</button>
+            <button type="submit" class="main-btn">Thêm Căn Hộ</button>
            
         </div>
         

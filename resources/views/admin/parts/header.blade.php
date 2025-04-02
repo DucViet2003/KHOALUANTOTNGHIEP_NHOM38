@@ -19,9 +19,9 @@
                             </li>
                             <li class="flex-box">
                                 <a href="/home"><img style="width: 50px;" src="{{asset('backend/asset/images/logo.png')}}" alt=""></a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{-- <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
-                                </form>
+                                </form> --}}
                                 <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     <i style="font-size: 30px; padding-left: 20px" class='bx bxs-log-out'></i>
                                 </a>
