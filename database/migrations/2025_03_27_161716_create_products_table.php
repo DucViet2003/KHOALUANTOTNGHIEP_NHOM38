@@ -18,8 +18,10 @@ return new class extends Migration
             $table->string('Star_rating')->nullable(); 
             $table->string('Price_nomal')->nullable();
             $table->string('Price_sale')->nullable();
-            $table->longText('description')->nullable();
-            $table->longText('content')->nullable();
+            $table->longText('Phone')->nullable();
+            $table->longText('Gmail')->nullable();
+            $table->longText('Description')->nullable();
+            $table->longText('Content')->nullable();
             $table->string('avatar')->nullable();
             $table->string('images')->nullable();
             $table->timestamps();

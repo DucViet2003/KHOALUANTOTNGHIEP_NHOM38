@@ -5,18 +5,22 @@
         <div class="admin-content-main-content-left">
             <div class="admin-content-main-content-left-item">
                 <div class="admin-content-main-content-two-input">
-                    <input name="name" value="{{$product -> name}}" type="text" placeholder="Tên sản phẩm">
+                    <input name="Name" value="{{$product -> Name}}" type="text" placeholder="Tên căn hộ">
                 </div>
                 <div class="admin-content-main-content-two-input">
-                    <input name="ram" value="{{$product -> ram}}" type="text" placeholder="Ram">
-                    <input name="ssd" value="{{$product -> ssd}}" type="text" placeholder="SSD">
+                    <input name="Address" value="{{$product -> Address}}" type="text" placeholder="Địa chỉ">
+                    <input name="Star_rating" value="{{$product -> Star_rating}}" type="text" placeholder="Sao đánh giá">
                 </div>
                 <div class="admin-content-main-content-two-input">
-                    <input name="price_noma" value="{{$product -> price_noma}}" type="text" placeholder="Giá bán">
-                    <input name="price_sale" value="{{$product -> price_sale}}" type="text" placeholder="Giá giảm">
+                    <input name="Price_nomal" value="{{$product -> Price_nomal}}" type="text" placeholder="Giá thuê">
+                    <input name="Price_sale" value="{{$product -> Price_sale}}" type="text" placeholder="Giá giảm">
                 </div>
-                <textarea name="description" id="" value="" placeholder="Đặc điểm nổi bật">{{$product -> description}}</textarea>
-                <textarea name="content" id="" value="" placeholder="Mô tả sản phẩm">{{$product -> content}}</textarea>
+                <div class="admin-content-main-content-two-input">
+                    <input name="Phone" value="{{$product -> Phone}}" type="text" placeholder="Số điện thoại">
+                    <input name="Gmail" value="{{$product -> Gmail}}" type="email" placeholder="Gmail">
+                </div>
+                <textarea name="Description" id="" value="{{$product -> Description}}" placeholder="Đặc điểm nổi bật"></textarea>
+                <textarea name="Content" id="" value="{{$product -> Content}}" placeholder="Mô tả Căn hộ"></textarea>
             </div>
             <button type="submit" class="main-btn">Cập Nhật Sản Phẩm</button>
         </div>
