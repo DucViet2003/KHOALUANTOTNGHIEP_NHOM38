@@ -1,6 +1,6 @@
 @extends('admin.main')
 @section('content')
-<form action="/admin/product/add" enctype="multipart/form-data" method="post">
+<form action="/adm/product/add" enctype="multipart/form-data" method="post">
     <div class="admin-content-main-content-product-add">
         <div class="admin-content-main-content-left">
             <div class="admin-content-main-content-left-item">

@@ -1,4 +1,4 @@
-@extends('admin.main')
+{{-- @extends('admin.main')
 @section('content')
 <div class="admin-content-main-content-product-list">
     <div class="table-heght">
@@ -29,4 +29,4 @@
                             </table>
                         </div>
                     </div>
-@endsection
+@endsection --}}

@@ -18,7 +18,7 @@
                                 <i class="ri-message-2-line" number="5"></i>
                             </li>
                             <li class="flex-box">
-                                <a href="/home"><img style="width: 50px;" src="{{asset('backend/asset/images/logo.png')}}" alt=""></a>
+                                <a href="/home"><img style="width: 50px;" src="{{asset('admin/images/logo.png')}}" alt=""></a>
                                 {{-- <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form> --}}
