@@ -4,12 +4,12 @@
 
     <div class="admin-content-main-content-product-add">
         <div class="admin-content-main-content-images">
-            <label for="files"><i class="ri-folder-image-line"></i>Ảnh Sản Phẩm</label>
-            <input type="file" id="files" name="images">
-            <input type="hidden" name="banner" id="input-file-img-hiden">
+            <p>Thêm ảnh banner cho Slide</p>
+            <label for="files"><i class="ri-folder-image-line"></i>Ảnh BANNER</label>
+            <input type="file" name="images" id="files" multiple>
             <div class="image-show" id="input-file-imgs">
-            </div>
-            
+                 
+        </div>
 
 
             <br>

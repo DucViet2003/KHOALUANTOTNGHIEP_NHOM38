@@ -10,13 +10,13 @@ class bannercontroller extends Controller
 {
     public function insert_banner(Request $request)
     {
-        $banner = new banner();
-        if($request->has('banner_images')){
-            $banner_images = implode('*', $request->input('banner_images'));
-            $banner->images = $banner_images;
+        $banners = new banner();
+        if($request->has('product_images')){
+            $banner_images = implode('*', $request->input('product_images'));
+            $banners->images = $banner_images;
         }
         // dd($request -> all());
-        $banner->save();
+        $banners->save();
         return redirect()->back();
     }
 
@@ -45,18 +45,18 @@ class bannercontroller extends Controller
     }
     public function edit_banner(Request $request){
         $banner = banner::find($request -> id);
-        return view('admin.banner.edit',[
+        return view('admin.slide.edit',[
             'title' => 'Sửa Banner',
             'banner' => $banner
         ]);
     }
     public function update_banner(Request $request){
         $banner = banner::find($request -> id);
-        if($request->has('banner_images')){
-            $banner_images = implode('*', $request->input('banner_images'));
+        if($request->has('product_images')){
+            $banner_images = implode('*', $request->input('product_images'));
             $banner->images = $banner_images;
         }
         $banner->save();
-        return redirect('/admin/banner/list');
+        return redirect('/adm/slide/list');
     }
 }

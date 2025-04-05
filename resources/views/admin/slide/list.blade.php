@@ -1,4 +1,4 @@
-{{-- @extends('admin.main')
+@extends('admin.main')
 @section('content')
 <div class="admin-content-main-content-product-list">
     <div class="table-heght">
@@ -12,14 +12,22 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($slide as $slide)
+                                    @foreach ($banner as $banner)
                                     <tr>
-                                        <td>{{$slide -> id}}</td>
-                                        <td><img style="width: 420px;padding: 10px;" src="{{asset($slide -> banner)}}" alt=""></td>
+                                        <td>{{$banner -> id}}</td>
                                         
                                         <td>
-                                            <a class="edit-class" href="/admin/slide/edit/{{$slide -> id}}">Sửa</a>
-                                            <a onclick="removeRows(slide=<?php echo $slide -> id?>,url='/admin/slide/delete')" class="delete-class" href="">Xóa</a>
+                                            @php
+                                                $product_images = explode("*",$banner->images);
+                                            @endphp
+                                            @foreach ($product_images as $product_image)
+                                                <img style="width: 420px;padding: 10px;" src="{{asset($banner->images)}}" alt="">
+                                            @endforeach
+                                        </td>
+                                        
+                                        <td>
+                                            <a class="edit-class" href="/adm/slide/edit/{{$banner -> id}}">Sửa</a>
+                                            <a onclick="removeRows(banner=<?php echo $banner -> id?>,url='/adm/slide/delete')" class="delete-class" href="">Xóa</a>
                                         </td>
                                     </tr>  
                                     @endforeach
@@ -29,4 +37,4 @@
                             </table>
                         </div>
                     </div>
-@endsection --}}
+@endsection

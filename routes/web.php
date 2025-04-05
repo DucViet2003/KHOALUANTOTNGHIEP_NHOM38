@@ -37,7 +37,7 @@ Route::prefix('adm') ->group( function (){
     Route::get('/slide/list',[bannercontroller::class,'list_banner']);
     Route::get('/slide/delete',[bannercontroller::class,'delete_banner']);
     Route::get('/slide/edit/{id}',[bannercontroller::class,'edit_banner']);
-    Route::post('/slide/add',[bannercontroller::class,'update_banner']);
+    Route::post('/slide/edit/{id}',[bannercontroller::class,'update_banner']);
 
 
 
