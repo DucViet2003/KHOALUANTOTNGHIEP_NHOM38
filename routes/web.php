@@ -3,32 +3,21 @@
 use App\Http\Controllers\admin\bannercontroller;
 use App\Http\Controllers\admin\productcontroller;
 use App\Http\Controllers\admin\uploadcontronller;
+use App\Http\Controllers\frontend\bannercontroller as FrontendBannercontroller;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('fe.home');
 });
 Route::get('/home', function () {
     return view('fe.home');
 });
-Route::get('/cart', function () {
-    return view('fe.cart');
+Route::get('/',[FrontendBannercontroller::class,'show_banner']);
+Route::prefix('fe') ->group( function (){
+
+
 });
-Route::get('/all', function () {
-    return view('fe.allproducts');
-});
-Route::get('/loginadm', function () {
-    return view('login.loginadm');
-});
-Route::get('/loginfee', function () {
-    return view('login.loginfe');
-});
-Route::get('/adm', function () {
-    return view('admin.product.list');
-});
-Route::get('/adm/addproduct', function () {
-    return view('admin.product.add');
-});
+
 
 Route::prefix('adm') ->group( function (){
     Route::get('/home', function () {return view('admin.home');});

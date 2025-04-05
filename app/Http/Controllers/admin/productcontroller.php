@@ -59,20 +59,22 @@ class productcontroller extends Controller
         ]);
     }
     public function update_product(Request $request){
-        $product = product::find($request -> id);
-        $product->name = $request->input('name');
-        $product->ram = $request->input('ram');
-        $product->ssd = $request->input('ssd');
-        $product->price_noma = $request->input('price_noma');
-        $product->price_sale = $request->input('price_sale');
-        $product->description = $request->input('description');
-        $product->content = $request->input('content');
-        $product->avatar = $request->input('avatar');
+        $products = product::find($request -> id);
+        $products->Name = $request->input('Name');
+        $products->Address = $request->input('Address');
+        $products->Star_rating = $request->input('Star_rating');
+        $products->Price_nomal = $request->input('Price_nomal');
+        $products->Price_sale = $request->input('Price_sale');
+        $products->Phone = $request->input('Phone');
+        $products->Gmail = $request->input('Gmail');
+        $products->Description = $request->input('Description');
+        $products->Content = $request->input('Content');
+        $products->avatar = $request->input('avatar');
         if($request->has('product_images')){
             $product_images = implode('*', $request->input('product_images'));
-            $product->images = $product_images;
+            $products->images = $product_images;
         }
-        $product->save();
-        return redirect('/admin/product/list');
+        $products->save();
+        return redirect('/adm/product/list');
     }
 }

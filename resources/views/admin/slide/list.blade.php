@@ -17,12 +17,15 @@
                                         <td>{{$banner -> id}}</td>
                                         
                                         <td>
-                                            @php
-                                                $product_images = explode("*",$banner->images);
-                                            @endphp
-                                            @foreach ($product_images as $product_image)
-                                                <img style="width: 420px;padding: 10px;" src="{{asset($banner->images)}}" alt="">
-                                            @endforeach
+                                            <div class="product-image-banner">
+    
+                                                @php
+                                                    $product_images = explode('*',$banner -> images);
+                                                @endphp
+                                                @foreach ($product_images as $product_image )
+                                                <img style="width: 70px;" src="{{asset($product_image)}}" alt="">
+                                                @endforeach
+                                            </div>
                                         </td>
                                         
                                         <td>
@@ -36,5 +39,5 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+    </div>
 @endsection
