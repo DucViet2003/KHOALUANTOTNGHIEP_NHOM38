@@ -11,7 +11,7 @@ class bannercontroller extends Controller
     public function show_banner(){
         $banner = banner::all();
         // dd($banner);
-        return view('fe.part.slide',[
+        return view('fe.home',[
         
         'banner'=> $banner
         ]);

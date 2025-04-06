@@ -13,7 +13,7 @@
             <nav>
                 <ul>
                     <li><a href="home">Trang Chủ</a></li>
-                    <li><a href="all">Sản Phẩm</a></li>
+                    <li><a href="allproducts">Sản Phẩm</a></li>
                     <li><a href="#">Vila</a></li>
                     <li><a href="#">Khách Sạn</a></li>
                     <li><a href="#">Nhà Nghỉ</a></li>
