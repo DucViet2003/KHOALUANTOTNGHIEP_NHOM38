@@ -14,7 +14,7 @@ Route::get('fe/product/{id}',[FrontendProductcontroller::class,'show_product']);
 
 
 Route::prefix('adm') ->group( function (){
-    Route::get('/home', function () {return view('admin.home');});
+    Route::get('/home', function () {return view('admin.dashboad.home');});
     Route::post('/slide/add',[bannercontroller::class,'insert_banner']);
     Route::get('/slide/create',[bannercontroller::class,'add_banner']);
     Route::get('/slide/list',[bannercontroller::class,'list_banner']);

@@ -22,13 +22,13 @@
                 <div class="product-detail-right">
                     <div class="product-detail-right-infor">
                         <h1 style="padding-bottom: 30px; color: blue; margin-top: -30px">{{$product -> Name}}</h1>
-                    <span>{{$product -> Address }} </span><span> <br> </span> <span> {{ $product -> Star_rating}}</span>
+                    <span> Địa chỉ: {{$product -> Address }} </span><span> <br> </span> <span> {{ $product -> Star_rating}}</span>
                     <div class="hot-product-item-price">
                         <p><span class="sale">{{number_format($product -> Price_sale)}}<sup style="padding-right: 20px">₫</sup></span><span  class="money">{{number_format($product -> Price_nomal)}}<sup>₫</sup></span> </p>
                     </div>
     
                     </div>
-                    <h2>Thông số kỹ thuật</h2>
+                    <h2>Thông tin căn hộ</h2>
                     <br>
                     <div class="product-detail-right-price">
                         
@@ -37,7 +37,7 @@
                         </ul>
                     </div>
                     <div class="product-detail-right-quantity">
-                        <h2>Số lượng</h2>
+                        <h2>Số Ngày Thuê Căn Hộ</h2>
                         <div class="product-detail-right-quantity-input">
                             <i class="ri-subtract-line"></i>
                             <input onkeyDown="return false" class="quantity-input" name="product_qty" type="number" value="1">
@@ -46,13 +46,13 @@
                         </div>
                     </div>
                     <div class="product-detail-right-button">
-                        <button type="submit" class="mainbutton">Thêm Vào Giỏ Hàng</button>
+                        <button type="submit" class="mainbutton">Đặt Hàng</button>
                     </div>
                 </div>
             </div>
             <div class="row-flex">
                 <div class="product-detail-content">
-                    <h2>Chi tiết sản phẩm</h2>
+                    <h2>Chi tiết căn hộ</h2>
                     <p>
                            {{$product -> Content}} 
                     </p>

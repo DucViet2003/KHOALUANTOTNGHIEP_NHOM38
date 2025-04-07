@@ -7,7 +7,7 @@
                             <ul class="sub-menu">
                                 <div class="sub-menu-item">
                                     
-                                    <li><a href="/admin"><i class="ri-arrow-right-s-fill"></i>Tổng quát</a></li>
+                                    <li><a href="/adm/home"><i class="ri-arrow-right-s-fill"></i>Tổng quát</a></li>
                                 </div>
                             </ul>
                         </li>
