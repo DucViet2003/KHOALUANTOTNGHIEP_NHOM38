@@ -7,10 +7,10 @@ use App\Http\Controllers\frontend\bannercontroller as FrontendBannercontroller;
 use App\Http\Controllers\frontend\productcontroller as FrontendProductcontroller;
 use Illuminate\Support\Facades\Route;
 
-Route::get('',[FrontendBannercontroller::class,'show_banner']);
+Route::get('home',[FrontendBannercontroller::class,'show_banner']);
 Route::get('allproducts',[FrontendProductcontroller::class,'show_allhotproduct']);
 Route::get('fe/product/{id}',[FrontendProductcontroller::class,'show_product']);
-Route::get('/home',[FrontendProductcontroller::class,'index']);
+// Route::get('home',[FrontendProductcontroller::class,'index']);
 
 
 Route::prefix('adm') ->group( function (){

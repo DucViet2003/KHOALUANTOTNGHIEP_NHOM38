@@ -121,7 +121,7 @@ header.active {
 
 header{
     height: var(--header-height);
-    background: linear-gradient(to right, #220440, #3D0773, #650BBF, #730DD9, #BF3BA9);
+    /* background: linear-gradient(to right, #220440, #3D0773, #650BBF, #730DD9, #BF3BA9); */
     /* border-bottom: 1px solid #dddd; */
     position: fixed;
     z-index: 1;

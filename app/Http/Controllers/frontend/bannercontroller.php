@@ -12,9 +12,10 @@ class bannercontroller extends Controller
         $banner = banner::all();
         // dd($banner);
         return view('fe.home',[
-        
+        'title' => 'Home', 
         'banner'=> $banner
         ]);
 
     }
+
 }

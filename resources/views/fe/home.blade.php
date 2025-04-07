@@ -13,10 +13,11 @@
 
 <section class="slider"> 
     @include('fe.part.slide')
+    
 </section>  
 <!--hotproduct-->
- {{--  <section class="hot-products">
-    @include('shop.part.hotproduct')
+  {{-- <section class="hot-products">
+    @include('fe.part.hotproducts')
 </section>
   
 <!--footer-->

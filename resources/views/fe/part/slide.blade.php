@@ -1,6 +1,8 @@
 <div class="slider-items">
         @php
-            $product_images = explode('*',$banner->images);
+            // Lấy banner đầu tiên trong collection nếu có
+            $first_banner = $banner->first();
+            $product_images = $first_banner ? explode('*', $first_banner->images) : [];
         @endphp
         @foreach ($product_images as $product_image )
         <div class="slider-item">
