@@ -28,5 +28,9 @@
         {{-- <div class="header-cart">
             <a href="cart"><i class='bx bx-cart' number="0"></i></a>
         </div> --}}
+        {{-- <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button type="submit">Đăng xuất</button>
+        </form> --}}
     </div>
 </div>
