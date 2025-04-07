@@ -16,14 +16,14 @@
     
 </section>  
 <!--hotproduct-->
-  {{-- <section class="hot-products">
+  <section class="hot-products">
     @include('fe.part.hotproducts')
 </section>
   
 <!--footer-->
 <footer>
-        @include('shop.part.footer')
-</footer> --}}
+        @include('fe.part.footer')
+</footer>
 <script src="{{asset('fe/js/script.js')}}"></script>
 </body>
 </html>

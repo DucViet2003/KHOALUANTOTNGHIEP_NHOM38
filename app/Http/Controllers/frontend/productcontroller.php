@@ -3,15 +3,18 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\banner;
 use App\Models\product;
 use Illuminate\Http\Request;
 
 class productcontroller extends Controller
 {
     public function index(){
+        $banner = banner::all();
         $products = product::all();
         return view('fe.home',[
-            'products' => $products
+            'products' => $products,
+            'banner'=> $banner
         ]);
     }
     public function show_allhotproduct() {

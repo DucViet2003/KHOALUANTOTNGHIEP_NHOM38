@@ -12,7 +12,7 @@
         <div class="header-nav">
             <nav>
                 <ul>
-                    <li><a href="home">Trang Chủ</a></li>
+                    <li><a href="/">Trang Chủ</a></li>
                     <li><a href="allproducts">Sản Phẩm</a></li>
                     <li><a href="#">Vila</a></li>
                     <li><a href="#">Khách Sạn</a></li>
@@ -25,8 +25,8 @@
             <input type="text" placeholder="Tìm Kiếm">
             <i class='bx bx-search'></i>
         </div>
-        <div class="header-cart">
+        {{-- <div class="header-cart">
             <a href="cart"><i class='bx bx-cart' number="0"></i></a>
-        </div>
+        </div> --}}
     </div>
 </div>
